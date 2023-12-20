@@ -1,5 +1,5 @@
  body{
-    background-color:#1A1A1A ;
+    background-color:#333333 ;
     margin: 48px 24px 0 24px ;
     font-family: 'Roboto', sans-serif;
     
@@ -20,15 +20,60 @@
  .date{
     font-size: 14px;
     margin-bottom: 8px;
-    color: #f1f1f1;
+    color: #e7e5e5;
     font-weight: 300;
  }
+ .add_task_content{
+   width: 100%;
+   display: flex;
+   flex-direction: row;
+   justify-content: space-between;
+ }
+ .new_task{
+   width: 80%;
+   height: 32px;
+   border-radius: 6px;
+   border: none;
+   padding: 8px 16px;
+   background-color: #3f3f3f;
+   color: #fff;
+ }
+ .new_task:focus{
+   outline: none;
+ }
+.add_btn{
+   width: 15%;
+   background-color: #252525;
+   color: #fff;
+   /* border: 1px solid #fff; */
+   border-radius: 6px;
+   border-width: 0;
+   outline: none;
+   
+}
+.task_content{
+   margin-top: 32px;
+}
  .form_content{
-    background-color: #fff;
+    background-color: #252525;
+    color: #fff;
     width: 100%;
     height: auto;
-    margin-bottom: 16px;
+    padding: 12px 8px;
+    margin: 0 0 16px 0;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: row;
+    align-items:center;
  }
+.checkbox {
+   width: 16px;
+   height: 16px;
+   margin-right: 16px;
+   background-color: #252525;
+   color: #252525;
+}
+
 
 @media (min-width: 600px) {
    

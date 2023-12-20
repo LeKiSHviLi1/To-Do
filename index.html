@@ -21,19 +21,20 @@
            <h1>To Do</h1>        
         </div>
 
-        <div class="task_content" id="class_content">
-            <div class="form_content" id="form_content">
-               <input type="checkbox" name="checkbox1" id="checkbox1">
-               <label for="checkbox1">to do N1</label><br>
+        <div>
+            <div class="add_task_content">
+                 <input class="new_task" placeholder="I need to..." type="text" name="add_new_task" id="add_new_task">
+                 <button class="add_btn" onclick="add_task()">add</button>
             </div>
+        </div>
+        <div class="task_content" id="class_content">
+            <form class="form_content" id="form_content1" action="@">
+                <input class="checkbox" type="checkbox" name="checkbox1" id="checkbox1">
+                <label for="checkbox1">to do N1</label><br>
+            </form>
+            
        </div>
 
-        <div>
-           <div>
-                <input type="text" name="add_new_task" id="add_new_task">
-                <button onclick="add_task()">add</button>
-           </div>
-       </div>
     </div>
 </body>
 </html>
