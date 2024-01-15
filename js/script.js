@@ -1,44 +1,65 @@
-var i = 0;
+var counter;
 
+function isFill(){
+    
+return document.getElementById("add_new_task").value != '';
+    
+}
 
 function add_task() {
-    
-var new_task = document.getElementById("add_new_task");
+    if(isFill()){
+        
+var formContent = document.getElementById("form_content");    
 
-var form_content = document.createElement("form");
+counter = formContent.elements.length;  
+
+
+var newTask = document.getElementById("add_new_task");
+var divContent = document.createElement("div");
 var checkbox = document.createElement("input");
 
 
 checkbox.type = "checkbox";
-checkbox.name = "checkbox"+(i + 1);
-checkbox.id = "checkbox" + (i + 1);
+checkbox.name = "checkbox"+(counter);
+checkbox.id = "checkbox" + (counter);
 checkbox.className = "checkbox";
 
 var label = document.createElement("label");
-label.innerHTML = new_task.value;
-label_id = "checkbox"+(i + 1);
-label.setAttribute("for",label_id);
+label.innerHTML = newTask.value;
+label_id = "checkbox"+(counter);
+label.setAttribute("for", label_id);
 
-form_content.id = "form_content"+(i+1);
-form_content.className = "form_content"
+divContent.id = "form_content"+(counter);
+divContent.className = "div_content"
 var breake = document.createElement("br");
 
 
-var task_content = document.getElementById("class_content")
+var taskContent = document.getElementById("class_content")
 
-document.body.appendChild(task_content);
-task_content.appendChild(form_content);
+document.body.appendChild(taskContent);
+taskContent.appendChild(formContent);
+formContent.appendChild(divContent);
 
-form_content.appendChild(checkbox);
-form_content.appendChild(label);
-form_content.appendChild(breake);
+divContent.appendChild(checkbox);
+divContent.appendChild(label);
+divContent.appendChild(breake);
 
-i=i+1;
-clearLable();
+
+
+clearLabel();
+}
 }
 
 
-
-function clearLable(){
-    document.getElementById("add_new_task").value = '';
+function clearLabel(){
+    document.getElementById("add_new_task").value = '';  
 }
+
+const date = new Date();
+const month = date.getMonth() + 1;
+const day = date.getDate();
+
+
+
+console.log(month);
+console.log(day);
