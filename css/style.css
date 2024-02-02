@@ -25,7 +25,7 @@ body{
  .date{
     font-size: 14px;
     margin-bottom: 8px;
-    color: #e7e5e5;
+    color: #d6d6d6;
     font-weight: 300;
  }
  .add_task_content{
@@ -81,7 +81,14 @@ body{
    background-color: #252525;
    color: #252525;
 }
-
+.label{
+   font-weight: 400;
+}
+.labelOn{   
+   color: #fcefef;
+   text-decoration: line-through;
+   font-style: italic;
+}
 
 @media (min-width: 600px) {
    
