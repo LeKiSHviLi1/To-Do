@@ -68,12 +68,6 @@ function toggleCheckbox(childInput) {
   childInput.checked = !childInput.checked;
 }
 
-// document.cookie = "saxeli=gela; expires=Thu, 01 Jan 2025 00:00:00 UTC";
-// console.log(document.cookie);
-
-//localStorage
-
-// localStorage.setItem("id");
 
 //Dates
 const date = new Date();
